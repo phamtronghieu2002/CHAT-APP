@@ -1,0 +1,52 @@
+
+.item
+{
+    padding: 9px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+ 
+    &:hover
+    {
+               background: rgba(22, 24, 35, 0.03);
+    }
+}
+.active
+{
+   background-color: #ECF3FF;
+   &:hover
+   {
+    background-color: #ECF3FF;
+   }
+}
+
+.avatar
+{
+    width: 56px;
+    height: 56px;
+    margin: 0px 12px 0px 0px;
+    img
+    {
+    border-radius: 50%;
+    }
+}
+.displayName
+{
+    font-size: 15px;
+    color:#050505;
+    font-family: inherit;
+    font-weight: 400;
+}
+.last-message
+{
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(22, 24, 35, 0.5);
+    font-weight: 400;
+    width: 200p;
+    display: block;
+    width: 220px;
+    overflow: hidden;
+}
+

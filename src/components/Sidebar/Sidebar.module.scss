@@ -1,0 +1,21 @@
+.sidebar
+{
+    flex-basis: 25%;
+    min-height: 100px;
+    border-right: 1px solid rgb(42 34 34 / 12%);
+    @media (max-width:740px) {
+        flex-basis: 100%;
+    }
+   
+}
+@media (max-width:740px) {
+
+  .Responsive
+  {
+    display: none;
+  
+  }
+    
+}
+
+   

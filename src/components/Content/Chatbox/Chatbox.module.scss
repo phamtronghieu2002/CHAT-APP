@@ -1,0 +1,32 @@
+.wrapper
+{
+    display: flex;
+    align-items: center;
+    padding: 11px 12px;
+   
+   
+    input
+    {
+        flex: 1;
+        outline: none;
+        border: none;
+        padding:  7px 15px 9px;
+        background: rgba(161, 159, 159, 0.2705882353);
+        font-size: 15px;
+        border-radius: 92px;
+      
+    }
+
+    .icon-action
+    {
+        color: #1877F2; 
+        font-size: 20px;
+        margin-right: 13px;
+    }
+    .icon-send
+    {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+}
+

@@ -1,0 +1,126 @@
+
+
+
+.wrapper
+{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+background-color: #f1f1f1;
+}
+form
+{
+    border-radius: 5px;
+    box-shadow: 2px 9px 49px -17px rgb(0 0 0 / 10%);
+    height: auto;
+    max-width: 400px;
+    padding: 40px 15px;
+    text-align: center;
+    width: 100%;
+    background: #fff;
+
+    
+     label
+     {
+        color: #696687;
+        font-size: 17px;
+        opacity: .7;
+        text-align: left !important;
+        display: block;
+     }
+    input
+    {
+        width: 100%;
+        color: #696687;
+        font-size: 18px;
+        border: 0;
+        outline: none;
+        height: 40px;
+        margin-bottom: 15px;
+        padding: 0 40px 0 0px;
+        background: white no-repeat;
+        // transition: 100ms all linear 0s;
+        background-image: linear-gradient(to bottom, rgba(77, 97, 252, 0.63) 0%, #4d61fc 90%), linear-gradient(to bottom, #e1e1e1, #e1e1e1);
+        background-size: 0 2px, 100% 1px;
+        background-position: 50% 100%, 50% 100%;
+        transition: background-size 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    }
+}
+.title-icon 
+{
+    color: #4d61fc;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.title
+{
+    color: #3b3663;
+    display: block;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.input-group
+{
+    position: relative;
+    padding: 0 20px;
+}
+
+.icon-input
+{
+    font-size: 16px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    color: #696687;
+    opacity: .3;
+}
+.btn-submit
+{
+    padding: 0 20px;
+    text-align: left !important;
+    margin-top: 30px;
+    button
+    {
+        background: #4d61fc;
+        border-radius: 6px;
+        border: 0;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        font-size: 16px;
+        padding: 15px 45px;
+        transition: 0.2s;
+        font-weight: 600;
+        i
+        {
+            margin-left: 6px;
+            margin-top: 4px;
+        }
+        &:hover{
+            background: #2036de;
+            transform: translateY(-2px);
+        }
+    }
+}
+
+@media(max-width:400px) {
+
+    .wrapper
+    {
+
+        display: block;
+
+    }
+form
+{
+height: 100%;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+}

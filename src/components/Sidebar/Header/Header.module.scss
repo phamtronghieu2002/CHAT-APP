@@ -1,0 +1,39 @@
+.header
+{
+  padding: 13px;
+  margin-bottom: 20px;
+  
+  .user-infor 
+  {
+    display: flex;
+    align-items: center;
+    img
+    {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    }
+    .display-name
+    {
+        color: #121213;
+        margin-left: 15px;
+    }
+  }
+
+}
+
+.action
+{
+    padding: 10px 8px 10px 16px;
+    display: block;
+    &:hover
+    {
+     background: rgba(22, 24, 35, 0.03);
+     cursor: pointer;
+    }
+    &:last-child
+    {
+        border-top: 1px solid rgba(22, 24, 35, 0.12);
+        color:#000;
+    }
+}

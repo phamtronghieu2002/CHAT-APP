@@ -1,0 +1,32 @@
+.wrapper
+{  font-weight: 600;
+    font-size: 16px;
+    padding: 8px 0px;
+    margin: 0px;
+    min-width: 223px;
+    background: #fff;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: rgb(0 0 0 / 12%) 0px 4px 16px;
+    opacity: 1;
+    overflow: auto;
+    position: relative;
+   
+}
+.popperAccount
+{
+    min-width: 342px;
+    height: 100vh;
+    box-shadow: none;
+}
+
+.arrow
+{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    position: absolute;
+}

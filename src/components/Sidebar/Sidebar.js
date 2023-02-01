@@ -74,26 +74,28 @@ function Sidebar({ Responsive }) {
   return (
     <div className={cx("sidebar", { Responsive })}>
       <Header />
-      {userChats.map((e, index) => {
-        return (
-          <AccountItem
-            key={index}
-            avatar={e.avatar}
-            displayName={e.displayName}
-            lastMessage={e.lastMessage}
-            onClick={() => {
-              inputChat && inputChat.focus();
-              setUserChat({
-                avatar: e.avatar,
-                displayName: e.displayName,
-                uid: e.uid,
-              });
-              setResponsive(true);
-            }}
-            active={userChat ? userChat.uid === e.uid : false}
-          />
-        );
-      })}
+      <div className={cx("usersChat")}>
+        {userChats.map((e, index) => {
+          return (
+            <AccountItem
+              key={index}
+              avatar={e.avatar}
+              displayName={e.displayName}
+              lastMessage={e.lastMessage}
+              onClick={() => {
+                inputChat && inputChat.focus();
+                setUserChat({
+                  avatar: e.avatar,
+                  displayName: e.displayName,
+                  uid: e.uid,
+                });
+                setResponsive(true);
+              }}
+              active={userChat ? userChat.uid === e.uid : false}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }
